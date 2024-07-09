@@ -1,0 +1,404 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: nunito sans;
+    background-color: #f2eddc;
+    color: #4B3621;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #c8a88c;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid #654321;
+}
+
+/* -----------------BARRA NAV FIJA----------- 
+.cabeza {
+    position: sticky;
+    top: 0;
+}
+
+/* -----------------BARRA NAV FIJA----------- */
+
+header {
+    width: 100%;
+    height: 160px;
+    background-color: #654321;
+    text-align: center;
+    max-width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.foto1 {
+    display: block;
+    width: 100%;
+    height: auto; 
+    
+}
+
+.header_texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: #4B3621;
+    font-family: 'Arial Rounded MT', Arial, Bold;
+    font-size: 35px;
+}
+
+nav {
+    background-color: #d9bba0;
+    padding: 15px;
+    border-top: 0.8px#654321 solid;
+    border-bottom: 0.8px #654321 solid;
+    font-size: 18px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 25px;
+}
+
+nav ul li {
+    padding: 0px 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 25px;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: #f4f4f4;
+    background-color: #59302c;
+    border-radius: 10px;
+    padding: 10px 25px;
+    transition: 0.4s;
+}
+
+/* RESPONSIVE NAVEGACION 
+@media screen and (max-width: 700px) {
+    nav{
+        padding: 0px;
+        padding-left: 4px;
+
+    }
+
+    nav ul {
+        padding: 10px 15px;
+    }
+    nav ul li {
+        padding: 0px 0px;
+    }
+}
+/*-----------------------------------------*/
+img {
+    display: block;
+    width: 100%;
+    height: auto; 
+    
+}
+
+.contenedor1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10% 10% 0% 10%;
+    padding-top: 20px;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.caja1, .caja4 {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #59302c;
+    width: calc(30% - 10px);
+    height: 60%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto2 {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja2, .caja3 {
+    margin-top: 20px;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: #a6775b;
+    width: calc(70% - 10px);
+    height: 2%;
+    border-radius: 15px;
+    font-size: 24px;
+    max-height: 700px;
+}
+
+.home1 {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: flex-end;
+    font-size: 20px;
+    margin: 40px 30px 20px 0px;
+}
+
+/* ----------------PORTFOLIO------------ */
+.proyectos {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.proyectos h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.proyectos_contenedor {
+    padding: 20px;
+}
+
+.proyectos_contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.img_proyecto {
+    background-color: #eaeaea;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.proyecto {
+    width: calc(33.333% - 30px);
+    margin-bottom: 20px;
+    
+}
+
+.prueba {
+    height: 310px;
+    overflow: hidden;
+}
+
+.carrusel {
+    position: relative;
+}
+
+.carrusel a{
+    text-decoration: none;
+    color: #f4f4f4;
+}
+
+.flechas_carrusel{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 35px;
+}
+
+.flechas_carrusel i:hover {
+    color: #35b8ff;
+}
+
+.def_preyecto {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 13px 0;
+    border: 1px solid #ccc;
+}
+
+@media (max-width: 768px) {
+    .proyecto {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .proyecto {
+        width: calc(100% - 20px);
+    }
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: flex-end;
+    font-size: large;
+}
+
+.fa-solid {
+    color: #8a643e;
+}
+
+.fa-solid:hover {
+    color: #4B3621;
+}
+
+/* ---------------HABILIDADES----------- */
+.seccion_texto {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.contenedor_texto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.caja_texto {
+    width: calc(50% - 20px);
+    margin-bottom: 20px;
+    background-color: #e9d5c1;
+    padding: 20px;
+}
+
+.caja_texto h3 {
+    margin-bottom: 10px;
+    
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.caja_texto p {
+    margin-top: 10px;
+}
+
+.caja_img {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.caja_imagen {
+    background-color: #654321;
+    width: 24%;
+    height: 90%;
+    display: block;
+}
+
+/* ---------------CONTACTO-------------- */
+.contacto {
+    margin-top: 20px;
+    padding: 20px;
+    margin: 25px;
+}
+
+.contacto_contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contacto_txt{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    background-color: #e9d5c1;
+}
+
+.contacto_detalles {
+    width: calc(65% - 20px);
+    border: 1px solid #8a643e;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.fa-solid, .fa-brands{
+margin-right: 15px;
+}
+
+.contacto_detalles h2 {
+    margin-bottom: 25px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.contacto_detalles p {
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.contacto_mapa {
+    width: calc(35% - 20px);
+    height: 300px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+iframe {
+    width: 100%;
+    height: 300px;
+    
+}
+
+/* -----------------FOOTER------------- */
+.final{
+    background-color: #b68a70;
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid;
+}
+
+.final p{
+    font-size: 14px;
+}
