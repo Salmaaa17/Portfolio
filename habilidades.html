@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe - Habilidades</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="Recursos/flor.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="Recursos/banner_prueba.jpg" alt="Banner_Logo"></a> 
+            <div class="header_texto">Salma Monzó Ramírez</div>   
+    </header>
+    <nav>
+        <ul>
+          <li><a id="pres" href="index.html">Inicio</a></li>
+          <li><a id="port" href="portfolio.html">Sobre mí</a></li>
+          <li><a id="habi" href="habilidades.html">Proyectos</a></li>
+          <li><a id="cont" href="contacto.html">Contacto</a></li>
+          <!-- Selector de idioma -->
+          <li class="language-selector">
+            <div class="selected-language">
+              <img id="current-flag" src="flags/spain.svg" alt="Español" />
+              <select id="language-selector" aria-label="Selector de idioma">
+                <option value="es" data-flag="flags/spain.svg">Español</option>
+                <option value="en" data-flag="flags/uk.svg">English</option>
+                <option value="fr" data-flag="flags/fr.svg">Français</option>
+                <option value="it" data-flag="flags/it.svg">Italiano</option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    <div class="seccion_texto">
+        <div class="contenedor_texto">
+            <div class="caja_texto">
+                <h3 id="title1">Animación</h3>
+                <p id="text1">Conocimiento avanzado sobre programas de la suit de <em>Adobe Creative Cloud</em></p>
+            </div>
+            <div class="caja_texto">
+                <h3 id="title2">Texturizado y iluminación</h3>
+                <p id="text2">Conocimiento intermedio sobre el programa Maya y buen desarrollo en éste</p>
+            </div>
+            <div class="caja_texto">
+                <h3 id="title3">Dibujo y modelado</h3>
+                <p id="text3">Conocimiento básico en el programa Maya</p>
+            </div>
+            <div class="caja_texto">
+                <h3 id="title4">Programación</h3>
+                <p id="text4">Conocimiento básico en programas de programación como Visual Studio Code</p>
+            </div>
+        </div>
+        <div class="caja_img">
+            <div  class="caja_imagen"><img src="Recursos/mery.jpg" alt="Mery_Animación"></div>
+            <div  class="caja_imagen"><img src="Recursos/cara.jpg" alt="Cara_Iluminación"></div>
+            <div  class="caja_imagen"><img src="Recursos/mano.jpg" alt="Mano_Modelo"></div>
+            <div  class="caja_imagen"><img src="Recursos/web.jpg" alt="Web_Programación"></div>
+        </div>
+    </div>
+    <footer id="foot" class="final">
+        <p>Copyright &copy; 2024. Salma Monzó | Todos los derechos reservados</p>
+    </footer>
+    <script src="translations.js"></script>
+</body>
+</html>
