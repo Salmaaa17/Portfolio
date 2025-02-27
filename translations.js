@@ -268,3 +268,29 @@ if (homeLink) {
     // Actualizar los textos
     updateTexts(savedLanguage);
   });
+
+  // CARRUSEL PORTFOLIO
+const slider = document.querySelector('.carrusel-slider');
+const prev = document.querySelector('.prev');
+const next = document.querySelector('.next');
+
+// Función para desplazar el carrusel
+const slide = (direction) => {
+    const slideWidth = slider.clientWidth;
+    if (direction === 'next') {
+        slider.scrollLeft += slideWidth;
+    } else {
+        slider.scrollLeft -= slideWidth;
+    }
+}
+
+// Eventos para las flechas
+next.addEventListener('click', (e) => {
+    e.preventDefault(); // Evitamos recargar la página
+    slide('next');
+});
+
+prev.addEventListener('click', (e) => {
+    e.preventDefault(); // Evitamos recargar la página
+    slide('prev');
+});
