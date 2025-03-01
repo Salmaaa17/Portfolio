@@ -18,6 +18,10 @@ const translations = {
         proj4: "Texturing of toy train",
         proj5: "Lighting and texturing of a motorbike helmet",
         proj6: "Texturing, lighting and editing of a cartoon scene",
+        videojuegos: "Videogames",
+        descr1: "Escape and horror game developed in Unity over a period of 3 months by a team of 4 people. An immersive experience designed for horror fans.",
+        button: "Download Locked In",
+        cred: "Credits of the game:",
 
         title1: "Animation",
         text1: "Advanced knowledge of the Adobe Creative Cloud suite of programmes",
@@ -51,7 +55,10 @@ const translations = {
         proj4: "Texturizado de tren de juguete",
         proj5: "Iluminación y texturizado de un casco",
         proj6: "Texturizado, iluminación y montaje de una escena cartoon",
-
+        videojuegos: "Videojuegos",
+        descr1: "Juego de escape y terror desarrollado en Unity en un período de 3 meses por un equipo de 4 personas. Una experiencia inmersiva diseñada para fanáticos del terror.",
+        button: "Descargar Locked In",
+        cred: "Créditos del juego:",
 
         title1: "Animación",
         text1: "Conocimiento avanzado sobre programas de la suit de Adobe Creative Cloud",
@@ -79,27 +86,30 @@ const translations = {
           "Je suis une personne très créative et très intéressée par l'apprentissage de différents sujets. J'ai réalisé de nombreux projets liés à ce monde et j'aimerais vous en montrer quelques-uns",
           
   
-          intr: "Mes projets",
-          proj1: "Edition avec Photoshop",
-          proj2: "Illumination d'objets en verre",
-          proj3: "Texturation de pièces d'échecs",
-          proj4: "Texture d'un petit train",
-          proj5: "Illumination et texturation d'un casque de moto",
-          proj6: "Texture, éclairage et édition d'une scène de dessin animé",
+        intr: "Mes projets",
+        proj1: "Edition avec Photoshop",
+        proj2: "Illumination d'objets en verre",
+        proj3: "Texturation de pièces d'échecs",
+        proj4: "Texture d'un petit train",
+        proj5: "Illumination et texturation d'un casque de moto",
+        proj6: "Texture, éclairage et édition d'une scène de dessin animé",
+        videojuegos: "Jeux vidéo",
+        descr1: "Jeu d'évasion et d'horreur développé en Unity sur une période de 3 mois par une équipe de 4 personnes. Une expérience immersive conçue pour les fans d'horreur.",
+        button: "Télécharger Locked In",
+        cred: "Crédits du jeu :",
+  
+        title1: "Animation",
+        text1: "Connaissance avancée de la suite Adobe Creative Cloud",
+        title2: "Texture et éclairage",
+        text2: "Connaissance intermédiaire de Maya et bon développement dans Maya",
+        title3: "Dessin et modélisation",
+        text3: "Connaissance de base de Maya",
+        title4: "Programmation",
+        text4: "Connaissance de base d'un logiciel de programmation tel que Visual Studio Code",
   
   
-          title1: "Animation",
-          text1: "Connaissance avancée de la suite Adobe Creative Cloud",
-          title2: "Texture et éclairage",
-          text2: "Connaissance intermédiaire de Maya et bon développement dans Maya",
-          title3: "Dessin et modélisation",
-          text3: "Connaissance de base de Maya",
-          title4: "Programmation",
-          text4: "Connaissance de base d'un logiciel de programmation tel que Visual Studio Code",
-  
-  
-          resume: "Si vous souhaitez me contacter, voici des informations plus détaillées à mon sujet",
-          cont: "Contact",
+        resume: "Si vous souhaitez me contacter, voici des informations plus détaillées à mon sujet",
+        cont: "Contact",
       },
 
     it: {
@@ -114,27 +124,30 @@ const translations = {
           "Sono una persona molto creativa e molto interessata a conoscere diversi argomenti. Ho realizzato molti progetti legati a questo mondo e vorrei mostrarvene alcuni",
           
   
-          intr: "I miei progetti",
-          proj1: "Editing con Photoshop",
-          proj2: "Illuminazione di oggetti in vetro",
-          proj3: "Texturing dei pezzi degli scacchi",
-          proj4: "Texturing del treno giocattolo",
-          proj5: "Illuminazione e texturing di un casco da moto",
-          proj6: "Texturing, illuminazione e assemblaggio di una scena di cartone animato",
+        intr: "I miei progetti",
+        proj1: "Editing con Photoshop",
+        proj2: "Illuminazione di oggetti in vetro",
+        proj3: "Texturing dei pezzi degli scacchi",
+        proj4: "Texturing del treno giocattolo",
+        proj5: "Illuminazione e texturing di un casco da moto",
+        proj6: "Texturing, illuminazione e assemblaggio di una scena di cartone animato",
+        videojuegos: "Videogiochi",
+        descr1: "Gioco di fuga e horror sviluppato in Unity nell'arco di 3 mesi da un team di 4 persone. Un'esperienza coinvolgente pensata per gli appassionati di horror.",
+        button: "Scaricare Locked In",
+        cred: "Crediti del gioco:",
+  
+        title1: "Animazione",
+        text1: "Conoscenza avanzata della suite Adobe Creative Cloud",
+        title2: "Texturing e illuminazione",
+        text2: "Conoscenza intermedia di Maya e buon sviluppo in Maya",
+        title3: "Disegno e modellazione",
+        text3: "Conoscenza di base di Maya",
+        title4: "Programmazione",
+        text4: "Conoscenza di base di software di programmazione come Visual Studio Code",
   
   
-          title1: "Animazione",
-          text1: "Conoscenza avanzata della suite Adobe Creative Cloud",
-          title2: "Texturing e illuminazione",
-          text2: "Conoscenza intermedia di Maya e buon sviluppo in Maya",
-          title3: "Disegno e modellazione",
-          text3: "Conoscenza di base di Maya",
-          title4: "Programmazione",
-          text4: "Conoscenza di base di software di programmazione come Visual Studio Code",
-  
-  
-          resume: "Se siete interessati a contattarmi, ecco informazioni più dettagliate su di me",
-          cont: "Contatto",
+        resume: "Se siete interessati a contattarmi, ecco informazioni più dettagliate su di me",
+        cont: "Contatto",
       },
   };
   
@@ -187,6 +200,18 @@ const translations = {
     if (document.getElementById("proj6")) {
         document.getElementById("proj6").textContent = translations[language].proj6;
     }
+    if (document.getElementById("videojuegos")) {
+      document.getElementById("videojuegos").textContent = translations[language].videojuegos;
+    }
+    if (document.getElementById("descr1")) {
+      document.getElementById("descr1").textContent = translations[language].descr1;
+    }
+    if (document.getElementById("button")) {
+      document.getElementById("button").textContent = translations[language].button;
+    }
+    if (document.getElementById("cred")) {
+      document.getElementById("cred").textContent = translations[language].cred;
+    }
     if (document.getElementById("foot2")) {
         document.getElementById("foot2").textContent = translations[language].foot2;
     }
@@ -231,13 +256,10 @@ const translations = {
     const selectedLanguage = event.target.value;
     const selectedFlag = event.target.options[event.target.selectedIndex].dataset.flag;
   
-    // Cambiar la bandera mostrada
     document.getElementById("current-flag").src = selectedFlag;
   
-    // Guardar el idioma seleccionado en localStorage
     localStorage.setItem("selectedLanguage", selectedLanguage);
   
-    // Actualizar los textos en la página
     updateTexts(selectedLanguage);
   });
   
@@ -246,8 +268,8 @@ const translations = {
 
 if (homeLink) {
     homeLink.addEventListener("click", (event) => {
-        event.preventDefault(); // Prevenir recarga
-        window.scrollTo({ top: 0, behavior: "smooth" }); // Desplazamiento suave
+        event.preventDefault();
+        window.scrollTo({ top: 0, behavior: "smooth" });
     });
 }
 
@@ -286,11 +308,36 @@ const slide = (direction) => {
 
 // Eventos para las flechas
 next.addEventListener('click', (e) => {
-    e.preventDefault(); // Evitamos recargar la página
+    e.preventDefault();
     slide('next');
 });
 
 prev.addEventListener('click', (e) => {
-    e.preventDefault(); // Evitamos recargar la página
+    e.preventDefault();
     slide('prev');
 });
+
+
+const modal = document.getElementById("modalImagen");
+const imagenAmpliada = document.getElementById("imagenAmpliada");
+const cerrar = document.querySelector(".cerrar");
+
+document.querySelectorAll(".captura img").forEach(img => {
+    img.addEventListener("click", function() {
+        modal.style.display = "flex";
+        imagenAmpliada.src = this.src; 
+        document.body.style.overflow = "hidden";
+    });
+});
+
+cerrar.addEventListener("click", function() {
+    modal.style.display = "none";
+    document.body.style.overflow = "auto";
+});
+
+modal.addEventListener("click", function(e) {
+    if (e.target === modal) {
+        modal.style.display = "none";
+    }
+});
+

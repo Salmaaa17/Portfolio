@@ -103,25 +103,25 @@
                 <div class="videojuego_seccion">
                         <h2 id="videojuegos">Videojuegos</h2>
                         <div class="descripcion_videojuego">
-                            <p>Un juego de suspenso y misterio, desarrollado con Unity por un equipo de 4 personas durante un periodo de 3 meses en clases. ¡Explora el misterio y resuelve el enigma!</p>
+                            <p id="descr1">Juego de escape y terror desarrollado en Unity en un período de 3 meses por un equipo de 4 personas. 
+                            Una experiencia inmersiva diseñada para fanáticos del terror.</p>
                         </div>
                         <div class="media_videojuego">
-                            <!--
                             <video width="100%" height="auto" controls>
-                                <source src="ruta/a/tu/video.mp4" type="video/mp4">
+                                <source src="Recursos/Locked_In_Trailer.mp4" type="video/mp4">
                                 Tu navegador no soporta el video.
                             </video>
-                            -->
+                            
                         </div>
                         <div class="capturas_screenshot">
                             <div class="captura"><img src="Recursos/Escena1.png" alt="Escena1"></div>
                             <div class="captura"><img src="Recursos/Escena2.png" alt="Escena2"></div>
-                            <div class="captura"><img src="Recursos/Escena2.png" alt="Escena3"></div>
+                            <div class="captura"><img src="Recursos/Escena3.png" alt="Escena3"></div>
                         </div>
-                        <a href="LINK_DE_DESCARGA" download class="download_button">Descargar Locked In</a>
+                        <a href="https://github.com/Salmaaa17/Portfolio/releases/download/Game_Locked_In/Locked_In.zip" download class="download_button" id="button">Descargar Locked In</a>
                         <div class="credits">
-                            <p><strong>Créditos del juego:</strong></p>
-                            <p>Marc Pérez, Salma Monzó, Ronald Delgado, Oscar Vallejo</p>
+                            <p><strong id="cred">Créditos del juego:</strong></p>
+                            <p id="bestis">Marc Pérez, Salma Monzó, Ronald Delgado, Oscar Vallejo</p>
                         </div>
                     </div>    
                 </div>
@@ -133,6 +133,12 @@
         <footer id="foot" class="final">
             <p>Copyright &copy; 2024. Salma Monzó | Todos los derechos reservados</p>
         </footer>
+        
+    <div id="modalImagen" class="modal">
+        <span class="cerrar">&times;</span>
+        <img class="modal-contenido" id="imagenAmpliada">
+    </div>
+
         <script src="translations.js"></script>
 </body>
 </html>

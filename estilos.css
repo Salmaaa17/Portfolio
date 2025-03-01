@@ -239,17 +239,17 @@ img {
     scroll-snap-type: x mandatory;
     overflow-x: auto;
     scroll-behavior: smooth;
-    scrollbar-width: none;  /* Ocultar scrollbar en Firefox */
-    -ms-overflow-style: none;  /* Ocultar scrollbar en IE y Edge */
+    scrollbar-width: none;  
+    -ms-overflow-style: none;  
 }
 
 .carrusel-slider::-webkit-scrollbar {
-    display: none;  /* Ocultar scrollbar en Chrome, Safari y Opera */
+    display: none;  
 }
 
 /* Cada slide */
 .slide {
-    flex: 0 0 100%;  /* Cada imagen ocupa el 100% del ancho */
+    flex: 0 0 100%; 
     scroll-snap-align: center;
     display: flex;
     justify-content: center;
@@ -263,33 +263,33 @@ img {
 
 .flechas_carrusel {
     position: absolute;
-    top: 50%; /* Centramos las flechas verticalmente */
+    top: 50%;
     left: 0;
     right: 0;
     display: flex;
-    justify-content: space-between; /* Coloca las flechas en los extremos */
-    align-items: center; /* Asegura que las flechas estén centradas dentro de los círculos */
+    justify-content: space-between; 
+    align-items: center; 
     width: 100%;
-    transform: translateY(-50%); /* Centrado perfecto */
-    pointer-events: none; /* Aseguramos que no bloqueemos la interactividad */
-    padding: 0 15px; /* Añadimos un poco de espacio a los lados */
+    transform: translateY(-50%);
+    pointer-events: none; 
+    padding: 0 15px;
 }
 
 .flechas_carrusel a {
-    pointer-events: all; /* Habilitamos la interacción con los enlaces */
+    pointer-events: all; 
     background: rgba(0, 0, 0, 0.5);
     color: #fff;
-    width: 40px; /* El tamaño del círculo */
-    height: 40px; /* El tamaño del círculo */
+    width: 40px; 
+    height: 40px; 
     display: flex;
-    align-items: center; /* Centra la flecha dentro del círculo */
-    justify-content: right; /* Centra la flecha dentro del círculo */
-    border-radius: 50%; /* Hacemos el círculo */
+    align-items: center;
+    justify-content: right; 
+    border-radius: 50%;
     text-decoration: none;
     transition: background 0.3s ease;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     position: relative;
-    margin: 0; /* Eliminamos el margen extra */
+    margin: 0; 
 }
 
 .flechas_carrusel a:hover {
@@ -297,7 +297,7 @@ img {
 }
 
 .flechas_carrusel i {
-    font-size: 20px; /* Ajustamos el tamaño de la flecha */
+    font-size: 20px; 
     line-height: 1;
 }
 
@@ -309,35 +309,35 @@ img {
     border: 1px solid #ccc;
 }
 
-/* Estilo de la sección del videojuego */
 .videojuego_seccion {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centrado de todo el contenido */
-    padding: 40px 10%; /* Espaciado con margen lateral */
-    background-color: #f4f4f4; /* Fondo suave para resaltar la sección */
+    align-items: center; 
+    padding: 40px 10%; 
+    background-color: #f4f4f4; 
     margin-top: 40px;
     border-radius: 15px;
 }
 
 #videojuegos {
-    font-size: 2em;
-    font-weight: bold;
     text-align: center;
-    margin-bottom: 20px;
-    color: #333;
+    margin-bottom: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
+
 
 .descripcion_videojuego {
     font-size: 1.2em;
     color: #555;
     text-align: center;
     margin-bottom: 30px;
-    max-width: 700px; /* Limita el ancho del texto */
+    max-width: 700px; 
 }
 
 .media_videojuego {
-    width: 80%; /* El video ocupará el 80% del ancho */
+    width: 80%; 
     margin-bottom: 20px;
 }
 
@@ -348,21 +348,20 @@ img {
     margin-bottom: 30px;
 }
 
-.captura img {
-    width: 45%; /* Las imágenes de las capturas ocuparán un 45% cada una */
+.captura img { 
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
 }
 
 .captura img:hover {
-    transform: scale(1.05); /* Efecto de ampliación cuando se pasa el mouse */
+    transform: scale(1.05); 
 }
 
 .videojuego .capturas_screenshot {
     display: grid;
-    gap: 20px; /* Espacio entre las imágenes */
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas por defecto */
-    justify-items: center; /* Centra las imágenes */
+    gap: 20px; 
+    grid-template-columns: repeat(3, 1fr); 
+    justify-items: center; 
     margin-top: 20px;
 }
 
@@ -378,7 +377,7 @@ img {
 }
 
 .download_button:hover {
-    background-color: #6a4d32; /* Cambio de color al pasar el ratón */
+    background-color: #6a4d32; 
 }
 
 .credits {
@@ -387,7 +386,6 @@ img {
     font-size: 1em;
     color: #666;
 }
-
 
 
 /* TABLETS */
@@ -417,13 +415,12 @@ img {
         width: calc(50% - 20px); /* 2 columnas en tablets */
     }
 
-    .videojuego .capturas_screenshot {
+    .capturas_screenshot {
         grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas medianas */
     }
 
-    /* La tercera imagen ocupa el ancho completo de las dos columnas */
-    .videojuego .capturas_screenshot img:nth-child(3) {
-        grid-column: span 2; /* La tercera imagen ocupa todo el ancho */
+    .captura:nth-child(3) {
+        grid-column: span 2; /* La tercera imagen ocupa el ancho completo de dos columnas */
     }
 }
 
@@ -468,7 +465,7 @@ img {
         font-size: 14px;
     }
 
-    .videojuego .capturas_screenshot {
+    .capturas_screenshot {
         grid-template-columns: 1fr; /* 1 columna en pantallas pequeñas */
     }
 }
@@ -496,6 +493,49 @@ img {
 .fa-solid:hover {
     color: #4B3621;
 }
+
+/* Ampliación fotos */
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-contenido {
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+.modal img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 80vh;
+}
+
+.cerrar {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cerrar:hover {
+    color: #7d6042;
+}
+
 
 /* ---------------HABILIDADES----------- */
 .seccion_texto {
