@@ -301,6 +301,16 @@ img {
     line-height: 1;
 }
 
+h1 {
+    font-size: 21px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    font-style: italic;
+}
+
+.rojo {
+    color: #9d0000; 
+}
 
 .def_preyecto {
     background-color: #f4f4f4;
