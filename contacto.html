@@ -46,20 +46,20 @@
                         Si estás interesado/a en colaborar conmigo o tienes alguna consulta, no dudes en ponerte en contacto. Puedes rellenar el formulario y te responderé lo antes posible.
                     </div>
                     <div class="contact-form">
-                        <h2>Envíame un mensaje</h2>
+                        <h2 id="enviarmsj">Envíame un mensaje</h2>
                         <form id="contact-form">
-                            <label for="name">Tu nombre *</label>
+                            <label for="name" id="nombre">Tu nombre *</label>
                             <input type="text" id="name" name="name" required>
                         
-                            <label for="email">Tu correo electrónico *</label>
+                            <label for="email" id="correo">Tu correo electrónico *</label>
                             <input type="email" id="email" name="email" required>
                         
-                            <label for="message">Mensaje *</label>
+                            <label for="message" id="msj">Mensaje *</label>
                             <textarea id="message" name="message" rows="4" required></textarea>
                         
-                            <button type="submit">Enviar</button>
+                            <button type="submit" id="enviar">Enviar</button>
                         </form>
-                        <p id="mensaje-estado"></p> <!-- Aquí pondremos el mensaje de éxito -->
+                        <p id="mensaje-estado"></p>
 
                     </div>
             </div>

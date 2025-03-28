@@ -34,6 +34,11 @@ const translations = {
 
         resume: "If you are interested in contacting me, here is more detailed information about me",
         cont: "Contact",
+        enviarmsj: "Send me a message",
+        nombre: "Your name *",
+        correo: "Your email *",
+        msj: "Message *",
+        enviar: "Send",
 
     },
     es: {
@@ -72,6 +77,11 @@ const translations = {
 
         resume: "Si estás interesado/a en contactar conmigo o tienes alguna consulta, no dudes en ponerte en contacto. Puedes rellenar el formulario y te responderé lo antes posible.",
         cont: "Contacto",
+        enviarmsj: "Envíame un mensaje",
+        nombre: "Tu nombre *",
+        correo: "Tu correo electrónico *",
+        msj: "Mensaje *",
+        enviar: "Enviar",
     },
 
     fr: {
@@ -110,6 +120,11 @@ const translations = {
   
         resume: "Si vous souhaitez me contacter, voici des informations plus détaillées à mon sujet",
         cont: "Contact",
+        enviarmsj: "Envoyez-moi un message",
+        nombre: "Votre nom *",
+        correo: "Votre adresse électronique *",
+        msj: "Message *",
+        enviar: "Envoyer",
       },
 
     it: {
@@ -148,6 +163,11 @@ const translations = {
   
         resume: "Se siete interessati a contattarmi, ecco informazioni più dettagliate su di me",
         cont: "Contatto",
+        enviarmsj: "Inviami un messaggio",
+        nombre: "Il tuo nome *",
+        correo: "Il vostro indirizzo e-mail *",
+        msj: "Messaggio *",
+        enviar: "Inviare",
       },
   };
   
@@ -248,6 +268,21 @@ const translations = {
     }
     if (document.getElementById("cont")) {
         document.getElementById("cont").textContent = translations[language].cont;
+    }
+    if (document.getElementById("enviarmsj")) {
+      document.getElementById("enviarmsj").textContent = translations[language].enviarmsj;
+    }
+    if (document.getElementById("nombre")) {
+      document.getElementById("nombre").textContent = translations[language].nombre;
+    }
+    if (document.getElementById("correo")) {
+      document.getElementById("correo").textContent = translations[language].correo;
+    }
+    if (document.getElementById("msj")) {
+      document.getElementById("msj").textContent = translations[language].msj;
+    }
+    if (document.getElementById("enviar")) {
+      document.getElementById("enviar").textContent = translations[language].enviar;
     }
   }
   
