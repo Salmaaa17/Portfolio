@@ -70,7 +70,7 @@ const translations = {
         text4: "Conocimiento básico en programas de programación como Visual Studio Code",
 
 
-        resume: "Si estás interesado o interesada en contactar conmigo, aquí te dejo información más detallada sobre mí",
+        resume: "Si estás interesado/a en contactar conmigo o tienes alguna consulta, no dudes en ponerte en contacto. Puedes rellenar el formulario y te responderé lo antes posible.",
         cont: "Contacto",
     },
 
@@ -291,7 +291,21 @@ if (homeLink) {
     updateTexts(savedLanguage);
   });
 
-  // CARRUSEL PORTFOLIO
+// CONTACTO ------ Formulario
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  emailjs.sendForm('service_os07w38', 'template_2ppmd5e', this)
+      .then(function() {
+          document.getElementById('mensaje-estado').innerText = "✅ ¡Mensaje enviado correctamente!";
+          document.getElementById('contact-form').reset();
+      }, function(error) {
+          document.getElementById('mensaje-estado').innerText = "❌ Error al enviar el mensaje. Inténtalo más tarde.";
+          console.log('FAILED...', error);
+      });
+});
+
+  // PORTFOLIO ----- CARRUSEL 
 const slider = document.querySelector('.carrusel-slider');
 const prev = document.querySelector('.prev');
 const next = document.querySelector('.next');
@@ -318,6 +332,7 @@ prev.addEventListener('click', (e) => {
 });
 
 
+// PORTFOLIO ----- FOTOS VIDEOJUEGO
 const modal = document.getElementById("modalImagen");
 const imagenAmpliada = document.getElementById("imagenAmpliada");
 const cerrar = document.querySelector(".cerrar");
@@ -338,6 +353,8 @@ cerrar.addEventListener("click", function() {
 modal.addEventListener("click", function(e) {
     if (e.target === modal) {
         modal.style.display = "none";
+        document.body.style.overflow = "auto";  // Aquí agregamos la restauración del scroll
     }
 });
+
 

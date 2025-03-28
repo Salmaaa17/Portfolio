@@ -283,7 +283,7 @@ img {
     height: 40px; 
     display: flex;
     align-items: center;
-    justify-content: right; 
+    justify-content: center; 
     border-radius: 50%;
     text-decoration: none;
     transition: background 0.3s ease;
@@ -599,45 +599,93 @@ h1 {
     margin-top: 20px;
     padding: 20px;
     margin: 25px;
-}
+}   
 
 .contacto_contenedor {
-    flex-direction: column;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
+    gap: 20px;
 }
 
-.contacto_txt{
-    width: 100%;
-    height: auto;
+.contacto_txt {
+    width: calc(30% - 10px);
     padding: 20px;
-    background-color: #e9d5c1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 60%;
+    overflow: hidden;
+    font-size: 18px;
 }
 
 .contacto_detalles {
-    width: 100%; 
-    border: 1px solid #8a643e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0px;
     padding: 20px;
-    margin-top: 20px;
-}
-
-.fa-solid, .fa-brands{
-margin-right: 15px;
+    width: 100%;
 }
 
 .contacto_detalles h2 {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
-    font-style: normal;
+
 }
 
 .contacto_detalles p {
     margin: 10px;
     display: flex;
     flex-direction: row;
+}
+
+.contact-form {
+    max-width: 400px;
+    padding: 20px;
+    background: #e9d5c1;
+    margin-left: auto;
+    border-radius: 3px;
+}
+
+.contact-form h2 {
+    text-align: center;
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+.contact-form button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    background: #8a643e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #6a4d32;
 }
 
 .contacto_mapa {
@@ -653,8 +701,19 @@ margin-right: 15px;
 iframe {
     width: 100%;
     height: 300px;
-    
 }
+
+
+/* 
+.fa-solid, .fa-brands{
+margin-right: 15px;
+}
+
+.text{
+    width: 50%;
+}
+
+*/
 
 /* -----------------FOOTER------------- */
 .final {
